@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="progress.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Video Player</title>
+</head>
+<body>
+          <!--Title--> 
+          <h1>Video Player</h1> 
+          <!--Video player-->
+          <video src="videos/video2.mp4" id="video" class="video" poster="images/cover.jpeg"></video>
+
+
+
+              <!--CUSTOM CONTROLS-->
+<div class="controls">
+    <!--play btn-->
+    <button class="btn" id="play">
+        <i class="fa fa-play fa-2x"></i>
+    </button>
+   <!--stop btn-->
+    <button class="btn" id="stop">
+        <i class="fa fa-stop fa-2x"></i><!--adding btn from fa library 2x indicates size-->
+
+    </button>
+    <!--progress bar slider--> 
+    <!--we have to take input for this-->
+    <input type="range" name="" id="progress" class="progress"
+    min="0" max="100" step="0.1" value="0"  
+    />
+    <!--duration of video-->
+    <span class="time" id="time">00:00</span>
+</div>
+
+    <script src="script.js"></script>
+  
+    
+</body>
+</html>
