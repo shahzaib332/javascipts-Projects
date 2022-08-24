@@ -148,7 +148,6 @@ mealsElement.addEventListener('click',e=>{
        getFullDetails(mealID);
        
    }
-   console.log(mealInfo);
 })
     
 
