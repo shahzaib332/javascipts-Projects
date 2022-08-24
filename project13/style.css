@@ -1,0 +1,94 @@
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:#f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+button {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+}
+.setting-btn{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+.setting {
+    background-color:rgba(0,0,0,0.3) ;
+    top: 0px;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out ;
+    font-weight: bold;
+   
+}
+.hide {
+    transform: translateY(-100%);
+}
+select{
+    width:100px ;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+.container{
+    background-color:#d2d2d2;
+    padding: 30px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    position: relative;
+    text-align: center;
+}
+.container h1{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    text-decoration: underline;
+}.container h2 {
+    margin-bottom: 30px;
+    font-size: 3rem;
+    
+}
+.container input{
+    border: 0;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    
+}
+.score{
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+.timer{
+    position: absolute;
+    top: 0;
+}
+.gameover {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #d2d2d2;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
