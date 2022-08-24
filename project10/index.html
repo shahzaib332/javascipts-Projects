@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Music Player</title>
+</head>
+<body>
+    <h1>Music player</h1>
+    <div class="container  " id="container">
+        <div class="info">
+            <!--song title will be added here after js-->
+            <h4 id="song-title">Ertugrul</h4>
+        
+        <!-- div for playback buttons-->
+        <div class="progress" id="progress">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        </div>
+        <!--for actual audio-->
+        <audio src="music/" id="audio"></audio>
+        <!-- for images-->
+        <div class="album-art" >
+            <img src="images/Ertrugul.jpeg" alt="album-art" id="album-art">
+
+        </div>
+
+        <div class="nav" id="nav">
+        <!-- here we add buttons -->
+        <button id="previous" class="nav-btn">
+       <i class="fas fa-backward"></i>
+        </button>
+        <button id="play" class="nav-btn nav-btn-large">
+            <i class="fas fa-play"></i>
+             </button>
+             <button id="next" class="nav-btn">
+                <i class="fas fa-forward"></i>
+                 </button>
+                </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

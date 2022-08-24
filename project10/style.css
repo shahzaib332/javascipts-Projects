@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:#BDD5EA ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+}
+.container{
+    border-radius: 10px;
+    display: flex;
+    background-color:white ;
+    
+    margin:100px, 0;
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.album-art{
+position: relative;
+width: 150px;
+}
+.album-art img{
+    display: flex;
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+}
+    .container.play img{
+        animation-play-state: running;
+
+    
+    }
+    @keyframes rotate{
+        from{
+            transform: rotate(0deg);
+
+        }
+        to{
+            transform: rotate(360deg);
+
+        }
+    }
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+    .nav-btn{
+    background-color: white;
+    border: 0;
+    color: #495867;
+    margin: 0 20px;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px;
+
+}
+.info{
+    background-color:#495867 ;
+    border-radius: 10px;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: calc(100% - 40px);
+    padding: 10px 10px 10px 150px;
+    transform: translateY(0%);
+    transition: transform is ease-in, opacity is ease-in;
+    opacity:0;
+    z-index: 0;
+    color: white;
+
+
+}
+.container.play .info{
+    opacity: 1;
+    transform: translateY(-100%);
+}
+.info h4{
+    margin: 0;
+    text-align: center;
+}
+h1{
+margin-bottom: 150px;
+}
+.nav-btn-large {
+    font-size: 24px;
+}
+.progress {
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 5px;
+    width: 100%;
+}
+.progress-bar {
+    background-color: #7f95a8;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+
+
+    
+
