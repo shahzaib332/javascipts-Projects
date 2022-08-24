@@ -1,0 +1,95 @@
+:root {
+    --success-color: limegreen;
+    --error-color: orangered;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(219, 197, 245, 0.979);
+    display: flex;
+    flex-direction: column;
+    color: rgb(252, 252, 252);
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+h2{
+
+}
+.container{
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.form-controller{
+margin-bottom: 10px;
+padding-bottom: 20px;
+position: relative;
+
+}
+.form-controller label{
+    display: block;
+    color: rgb(78, 70, 70);
+    margin-bottom: 5px;
+
+}
+.form-controller input{
+    border-radius: 5px;
+    
+    background-color: transparent;
+    padding: 5px;
+    font-size: 14px;
+    width: 100%;
+
+
+
+}
+
+.form button{
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(5, 5, 5);
+    width: 100%;
+    padding: 5px;
+    border-style: outset;
+    border-radius: 2px;
+    font-size: 16px;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.4);
+
+}
+
+.form-control input:hover {
+    outline: 0;
+    border-color: gray;
+}
+.form-control input:focus {
+    outline: 0;
+    border-color: gray;
+}
+.form-control.success input{
+    border-color: var(--success-color);
+    
+}
+.form-controller.error input{
+    border-color: var(--error-color);
+    
+}
+.form-controller small{
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    visibility: hidden;
+}
+.form-controller.error small{
+    visibility: visible;
+
+}
